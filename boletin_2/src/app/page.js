@@ -8,6 +8,15 @@ import LoginForm from "./LoginForm";
 import ImageGallery from "./ImageGallery";
 import MultiCounter from "./MultiCounter";
 import GuessTheNumber from "./GuessTheNumber";
+import UserTable from './UserTable';
+import ThemeSelector from "./ThemeSelector";
+import TextCarousel from "./TextCarousel";
+
+const texts = [
+    "Bienvenido al carrusel.",
+    "Aquí puedes ver diferentes textos.",
+    "Gracias por usar el carrusel."
+];
 
 export default function Home() {
     return (
@@ -44,9 +53,25 @@ export default function Home() {
             <br />
             <MultiCounter />
             <br />
+            <h1>Ejercicio 9 (UserTable)</h1>
+            <br/>
+            <UserTable />
+            <br/>
             <h1>Ejercicio 10 (GuessTheNumber)</h1>
             <br />
             <GuessTheNumber />
+            <br/>
+            <h1>Ejercicio 12 (ThemeSelector)</h1>
+            <br/>
+            <ThemeSelector />
+            <br/>
+            <h1>Ejercicio 14 (Simulador de encuesta con porcentajes)</h1>
+            <br/>
+            <SurveySimulator />
+            <br/>
+            <h1>Ejercicio 15 (TextCarousel)</h1>
+            <br/>
+            <TextCarousel texts={texts}/>
         </div>
     );
 }
